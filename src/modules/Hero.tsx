@@ -42,16 +42,18 @@ export default function Hero() {
            </span>
         </div>
 
-        <TextReveal 
-          text="Digital" 
-          className="text-5xl md:text-8xl lg:text-[6rem] xl:text-[7rem] font-bold tracking-tighter text-white leading-[0.9] uppercase"
-          delay={0.1}
-        />
-        <TextReveal 
-          text="Reality" 
-          className="text-5xl md:text-8xl lg:text-[6rem] xl:text-[7rem] font-bold tracking-tighter text-white leading-[0.9] uppercase"
-          delay={0.2} 
-        />
+        <div className="flex flex-wrap justify-center items-baseline gap-3 md:gap-6 mb-2 md:mb-0">
+          <TextReveal 
+            text="Digital" 
+            className="text-5xl md:text-8xl lg:text-[6rem] xl:text-[7rem] font-bold tracking-tighter text-white leading-[0.9] uppercase"
+            delay={0.1}
+          />
+          <TextReveal 
+            text="Reality" 
+            className="text-5xl md:text-8xl lg:text-[6rem] xl:text-[7rem] font-serif italic tracking-tighter text-white leading-[0.9] uppercase"
+            delay={0.2} 
+          />
+        </div>
         <TextReveal 
           text="Architect" 
           className="text-5xl md:text-8xl lg:text-[6rem] xl:text-[7rem] font-bold tracking-tighter text-white/50 leading-[0.9] uppercase"

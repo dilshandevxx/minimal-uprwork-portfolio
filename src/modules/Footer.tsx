@@ -2,7 +2,6 @@
 import MagneticButton from "@/components/ui/MagneticButton";
 import { ArrowUpRight, Copy, Twitter, Linkedin, Instagram, Github } from "lucide-react";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 export default function Footer() {
   const [time, setTime] = useState("");
@@ -30,16 +29,11 @@ export default function Footer() {
         
         {/* Left: Call to Action */}
         <div className="flex flex-col gap-8">
-          <motion.div
-             initial={{ opacity: 0, y: 20 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8 }}
-             viewport={{ once: true }}
-          >
+          <div className="mb-4">
              <h2 className="text-[12vw] leading-[0.8] font-bold tracking-tighter uppercase text-white/90">
                 Let&apos;s<br />Talk
              </h2>
-          </motion.div>
+          </div>
           
           <div className="flex flex-wrap gap-4">
              <MagneticButton className="px-6 py-3 rounded-full bg-white text-black font-semibold flex items-center gap-2 group hover:scale-105 transition-transform">
