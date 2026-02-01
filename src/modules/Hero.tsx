@@ -1,6 +1,5 @@
 "use client";
-import MagneticButton from "@/components/ui/MagneticButton";
-import { ArrowUpRight, Play, ArrowRight } from "lucide-react";
+import { Play } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -23,7 +22,7 @@ export default function Hero() {
             <div className="flex items-start gap-2 text-xs text-neutral-500 max-w-[200px] font-mono">
               <span className="mt-1">↳</span>
               <p>
-                Grilled Pixels is my personal brand - I came up with it in 2004 based on "cooking up ideas"
+                Grilled Pixels is my personal brand - I came up with it in 2004 based on &quot;cooking up ideas&quot;
               </p>
             </div>
           </motion.div>
@@ -109,9 +108,9 @@ export default function Hero() {
         >
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.9] tracking-tighter">
             I Bring The<br/>
-            <span className="font-pixel text-neutral-400">Unexpected</span> To<br/>
+            <span className="italic text-neutral-300">Unexpected</span> To<br/>
             Brand & Digital<br/>
-            <span className="font-pixel text-neutral-400">Experiences</span>
+            <span className="italic text-neutral-300">Experiences</span>
           </h1>
         </motion.div>
       </div>
